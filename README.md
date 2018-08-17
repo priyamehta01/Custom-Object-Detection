@@ -6,7 +6,7 @@ For object detection by darkflow model, the first requirement is creation of ann
 draw_box.py is a GUI oriented python code which is used to generate XML files which can be trained on the darkflow model.  
 For all the images in your dataset, you need to drag your mouse pointer starting from your upper left to your lower right. This will create XML files for each of the images in the dataset folder. 
 
-![Alt text](https://github.com/priyamehta01/Custom-Object-Detection/tree/master/images/gui.png)
+![](https://github.com/priyamehta01/Custom-Object-Detection/tree/master/images/gui.png)
 
 ## Training the model 
 Clone the darkflow repository. 
@@ -21,5 +21,5 @@ flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train -
 ## Custom Object Detection
 After the training is done, the ckpt folder will have various checkpoint files stored at different iteration values. In the image_detect.py file, load the image to detect the object from, the configuration file and the iteration value whose results you want to consider. 
 
-![Alt text](https://github.com/priyamehta01/Custom-Object-Detection/tree/master/images/output.png)
+![](https://github.com/priyamehta01/Custom-Object-Detection/tree/master/images/output.png)
 
